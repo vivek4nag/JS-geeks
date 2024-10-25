@@ -1,3 +1,10 @@
-# 1. BASIC DOM MANIPULATION
+# LINKS OF DIFFERENT PROJECTS
+
+## 1. BASIC DOM MANIPULATION
 
 [click here to view basic DOM manipulation](https://vivek4nag.github.io/JS-geeks/06_DOM_project_1/)
+
+
+## 2. CHANGE SHAPE & COLOR
+
+[click here to view the project](https://vivek4nag.github.io/JS-geeks/07_change_shape_color/)
