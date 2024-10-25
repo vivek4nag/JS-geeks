@@ -142,3 +142,24 @@
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
+#arrow{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+
+#rightPoint{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+#leftPoint{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+

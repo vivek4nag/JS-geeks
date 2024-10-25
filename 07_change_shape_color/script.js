@@ -4,7 +4,7 @@ const shape = document.getElementById("heart");
 const colorChange = document.getElementById("colorChange");
 const shapeChange = document.getElementById("shapeChange");
 
-let shapesArr = ["circle", "heart","chevron", "shield", "fish", "bookmark", "infinity", "square", "triangle", "cloud", "rhombus", "diamond", "cross", "crescent", "hexagon", "star", "trapezoid", "pentagon", "decagon", "parallelogram"]
+let shapesArr = ["circle", "heart","chevron", "shield", "fish", "bookmark", "infinity", "square", "triangle", "cloud", "rhombus", "diamond", "arrow" , "cross", "crescent", "hexagon", "star", "trapezoid", "pentagon", "decagon", "parallelogram", "rightPoint", "leftPoint"]
 
 function randomColor() {
   let r = Math.floor(Math.random() * 255);
