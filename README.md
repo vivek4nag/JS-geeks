@@ -8,3 +8,8 @@
 ## 2. CHANGE SHAPE & COLOR
 
 [click here to view the project](https://vivek4nag.github.io/JS-geeks/07_change_shape_color/)
+
+
+## 3. KEYBOARD CODE GENERATOR
+
+[click here to view the project](https://vivek4nag.github.io/JS-geeks/08_KeyBoard_code_generation/)
