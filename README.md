@@ -20,5 +20,5 @@
 
 ## 5. FEEDBACK UI
 
-[click here to view Product Cart](https://vivek4nag.github.io/JS-geeks/10_FeedBack_UI/)
+[click here to view FeedBack UI](https://vivek4nag.github.io/JS-geeks/10_FeedBack_UI/)
 
