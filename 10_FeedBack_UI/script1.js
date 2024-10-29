@@ -1,3 +1,5 @@
+// a more efficient JS code
+
 const container = document.querySelector(".container");
 const container2 = document.querySelector(".container-2");
 
