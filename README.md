@@ -24,7 +24,7 @@
 
 ## 6. STOPWATCH
 
-[click here to open stopwatch]https://vivek4nag.github.io/JS-geeks/11_stopWatch/)
+[click here to open stopwatch](https://vivek4nag.github.io/JS-geeks/11_stopWatch/)
 
 ## 7. DIGITAL CLOCK
 
