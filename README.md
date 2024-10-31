@@ -22,3 +22,11 @@
 
 [click here to view FeedBack UI](https://vivek4nag.github.io/JS-geeks/10_FeedBack_UI/)
 
+## 6. STOPWATCH
+
+[click here to open stopwatch]https://vivek4nag.github.io/JS-geeks/11_stopWatch/)
+
+## 7. DIGITAL CLOCK
+
+[click here to view time](https://vivek4nag.github.io/JS-geeks/12_DigitalClock/)
+
