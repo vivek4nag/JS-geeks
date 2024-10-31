@@ -10,7 +10,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+  /* background: linear-gradient(135deg, #ff758c, #ff7eb3); */
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: #f3f4f6;
   overflow: hidden;
   user-select: none;
@@ -18,29 +20,27 @@ body {
 
 .center {
   text-align: center;
+  animation: zoomIn 3s ease-in;
 }
 
 #banner {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   color: #e2e8f0;
-  /* margin-bottom: 1.2rem; */
-  animation: fadeDown 2.5s ease-in;
 }
 
-#clock,
-#date {
-  font-size: 3rem;
+
+#clock {
+  font-size: 4.5rem;
   margin: 10px 0;
   color: #f3f4f6;
-  animation: fadeUp 2.5s ease-in-out;
 }
 
 #date {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   color: #cbd5e1;
 }
 
@@ -59,26 +59,13 @@ body {
   }
 }
 
-@keyframes fadeUp {
+@keyframes zoomIn {
   from {
     opacity: 0;
-    transform: translateY(60px)
-    
+    transform: scale(0.3);
   }
   to {
     opacity: 1;
-    transform: translateY(0)
-
+    transform: scale(1);
   }
 }
-@keyframes fadeDown {
-    from {
-      opacity: 0;
-      transform: translateY(-60px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
