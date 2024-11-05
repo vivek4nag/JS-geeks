@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Leaderboard</title>
-</head>
-<body>
-    boiler plate
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">🏆LEADERBOARD🏆</h1>
 
+      <div class="input">
+        <input type="text" name="fname" id="fname" placeholder="Enter first name">
+        <input type="text" name="lname" id="lname" placeholder="Enter last name">
+        <select name="country" id="country">
+            <option value="" disabled selected>-Select Place-</option>
+            <option value="bhainsa, UP">Bhainsa, Uttar Pradesh</option>
+            <option value="tattikhana,Telengana">Tatti Khana, Telangana</option>
+            <option value="gadha, MP">Gadha, Madhya Pradesh</option>
+            <option value="kutta, Karnataka">Kutta, Karnataka</option>
+            <option value="kalabakra, Punjab">Kala Bakra, Punjab</option>
+            <option value="daru, Jharkhand">Daru, Jharkhand</option>
+        </select>
+        <input type="number" name="score" id="score" placeholder="enter your score">
+        <button id="add-btn">ADD</button>
+      </div>
 
+      <div class="leaderboard-div">
 
+        <h4 class="empty-msg">ADD PLAYERS TO SEE LEADERBOARD</h4>
+        <!-- here the leaaders will be rendered -->
+      </div>
 
-
-
-
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
