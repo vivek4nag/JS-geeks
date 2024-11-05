@@ -2,4 +2,180 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 950px;
+    background-color: #ecfffa;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.empty-msg {
+    text-align: center;
+    font-size: 1rem;
+    color: #818181;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2f328f;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    animation: slideDown 1.5s ease-in-out;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input input,
+.input select,
+.input button {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input input:focus,
+.input select:focus {
+    border-color: #292b77;
+}
+
+.input button {
+    background-color: #3a3d98;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.input button:hover {
+    background-color: #181b5c;
+}
+
+.leaderboard-div {
+    margin-top: 10px;
+}
+
+.leader-card {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: appear 0.5s ease-in-out;
+}
+
+.player-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 8px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.player-item:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.player-name span {
+    font-weight: bold;
+    margin-right: 1.2rem;
+    /* padding-left: 2rem; */
+}
+
+.player-name,
+span,
+.a-s-d {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* span {
+    display: block;
+    margin-bottom: 5px;
+} */
+
+.a-s-d {
+    display: flex;
+    gap: 5px;
+}
+
+.a-s-d button {
+    background-color: #3a3d98;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.a-s-d button:hover {
+    background-color: #2b2d75;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
