@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>StopWatch</title>
 </head>
+
 <body>
-    boiler plate
 
+    <div class="container">
+        <h1>⏱️STOPWATCH⏱️</h1>
 
-
-
-
-
-
-
-
-
-
+        <div class="sw-container">
+            <div class="stopwatch">
+                <span id="hours">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span> :
+                <span id="miliseconds">00</span>
+            </div>
+            <div class="btns">
+                <button id="start" class="btn">START</button>
+                <button id="lap" class="btn">Lap</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            <div class="laps">
+                <!-- different laps will be rendered here -->
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
