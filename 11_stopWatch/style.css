@@ -16,6 +16,7 @@ body {
   height: 100vh;
   /* margin: 0; */
   animation: fadeIn 1s ease-out;
+  overflow: hidden;
 }
 
 .container {
@@ -115,6 +116,18 @@ body {
   max-height: 300px;
   overflow-y: auto;
   animation: fadeIn 2s forwards 3s;
+  max-height: 250px;
+  overflow-y: scroll;
+  border-radius: 10px;
+
+}
+
+.laps::-webkit-scrollbar{
+  width: 5px;
+}
+.laps::-webkit-scrollbar-thumb{
+  background:#138496;
+  border-radius: 100px;
 }
 
 .card {

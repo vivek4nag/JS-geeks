@@ -5,6 +5,7 @@ let miliSecond = document.getElementById("miliseconds");
 let startBtn = document.getElementById("start");
 let intervalID;
 let isRunning = false;
+let isStarted = false;
 let resetBtn = document.getElementById("reset");
 resetBtn.disabled = true;
 let lapDiv = document.querySelector(".laps");
@@ -17,6 +18,7 @@ let hrs = 0,
   milisec = 0;
 
 function startStop() {
+  isStarted = true
   if (isRunning) {
     //age chal rha to bandh kro
     clearInterval(intervalID);
@@ -64,6 +66,7 @@ function resetSW() {
   resetBtn.disabled = true;
   lapDiv.innerHTML = "";
   lapArr = [];
+  isStarted = false;
 
   hrs = 0;
   mins = 0;
@@ -77,18 +80,20 @@ function resetSW() {
 }
 
 function addLaps() {
+  if (isStarted) {
+
     let obj = {
-        ghanta: hrs,
-        min: mins,
-        secs: sec,
-        milisecs: milisec,
+      ghanta: hrs,
+      min: mins,
+      secs: sec,
+      milisecs: milisec,
     };
-    
+
     lapArr.push(obj);
     lapDiv.innerHTML = "";
 
-  lapArr.forEach((ele,idx) => {
-    let lapCard = `
+    lapArr.forEach((ele, idx) => {
+      let lapCard = `
         <div class = "card">
             <span class = "index">${idx + 1}</span>
             <div class = "lap-time">
@@ -99,8 +104,9 @@ function addLaps() {
             </div>
         </div>
     `;
-    lapDiv.innerHTML += lapCard;
-  });
+      lapDiv.innerHTML += lapCard;
+    });
+  }
 }
 
 startBtn.addEventListener("click", startStop);
