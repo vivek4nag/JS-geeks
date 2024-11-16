@@ -43,4 +43,8 @@
 
 [click here to search image](https://vivek4nag.github.io/JS-geeks/15_Image_search/)
 
+## 11. INFINITE SCROLL
+
+[click here open infinite scroll](https://vivek4nag.github.io/JS-geeks/16_Infinite_scroll/)
+
 
